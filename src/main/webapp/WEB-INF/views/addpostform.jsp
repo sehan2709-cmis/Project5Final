@@ -13,7 +13,7 @@
     <form action="addok" method="post" >
       <table id="edit">
         <tr><td>Name:</td><td><input type="text" name="name"/></td></tr>
-        <tr><td>Gender:</td><td><input type="radio" name="gender" value="M" checked/><input type="radio" name="gender" value="W"/></td></tr>
+        <tr><td>Gender:</td><td><input type="radio" name="gender" value="M" checked/>Male<input type="radio" name="gender" value="W"/>Female</td></tr>
         <tr><td>Student Number:</td><td><input type="text" name="studentNum"/></td></tr>
         <tr><td>Phone Number:</td><td><input type="text" name="phoneNum"/></td></tr>
         <tr><td>Residential College:</td><td><input type="text" name="residentialCol"/></td></tr>

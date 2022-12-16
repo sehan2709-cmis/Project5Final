@@ -15,12 +15,25 @@
     <form:hidden path="seq"/>
     <table id="edit">
       <tr><td>Name:</td><td><form:input path="name"/></td></tr>
-      <tr><td>Gender:</td><td><form:input path="gender"/></td></tr>
+
+      <tr><td>Gender:</td><td><form:radiobutton path="gender" value="M"/>Male
+                              <form:radiobutton path="gender" value="W"/>Female</td></tr>
+<%--      <tr><td>Gender:</td><td><form:input path="gender"/></td></tr>--%>
+
       <tr><td>Student Number:</td><td><form:input path="studentNum"/></td></tr>
       <tr><td>Phone Number:</td><td><form:input path="phoneNum"/></td></tr>
       <tr><td>Residential College:</td><td><form:input path="residentialCol"/></td></tr>
       <tr><td>Building & Room Number:</td><td><form:input path="dorm"/></td></tr>
-      <tr><td>Major:</td><td><form:input path="major"/></td></tr>
+
+      <tr><td>Major:</td><td>
+        <form:select path ="major">
+          <form:option value="CS">Computer Science</form:option>
+          <form:option value="Com">Communication</form:option>
+          <form:option value="Law">Law</form:option>
+          <form:option value="Life">Life Sciences</form:option>
+          <form:option value="ICT">Global Entrepreneurship and ICT</form:option>
+        </form:select>
+      </td></tr>
       <tr><td>Penalty:</td><td><form:input path="penalty"/></td></tr></td></tr>
 
       <tr><td colspan="2">
